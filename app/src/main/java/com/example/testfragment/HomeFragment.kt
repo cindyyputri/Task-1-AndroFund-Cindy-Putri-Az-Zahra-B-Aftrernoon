@@ -33,7 +33,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id) {
             R.id.button -> {
-                findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
 
                 val bundle = Bundle()
                 bundle.putString("name", edtName.text.toString())

@@ -15,11 +15,6 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.fragment) as NavHostFragment
         navController = navHostFragment.navController
-
-        setupActionBarWithNavController(navController)
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return super.onSupportNavigateUp() || super.onSupportNavigateUp()
-    }
 }
