@@ -7,6 +7,39 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/ly_desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:elevation="10dp"
+        android:background="@drawable/custtom_edittext"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ini merupakan formulir data diri."
+            android:id="@+id/tv_deskripsi"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selengkapnya"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textEnd"
+            android:backgroundTint="@color/green"/>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"

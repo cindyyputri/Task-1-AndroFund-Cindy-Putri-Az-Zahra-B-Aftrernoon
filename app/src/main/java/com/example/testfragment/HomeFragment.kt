@@ -25,6 +25,12 @@ class HomeFragment : Fragment(), View.OnClickListener {
         edtAddress = view.findViewById(R.id.edt_address)
         edtNoHp = view.findViewById(R.id.edt_nohp)
 
+        val buttonMore = view.findViewById<Button>(R.id.more)
+
+        buttonMore.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
+        }
+
         val button = view.findViewById<Button>(R.id.button)
         button.setOnClickListener(this)
         return view
